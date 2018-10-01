@@ -1,5 +1,5 @@
 ###### Nome do projeto: Projeto DEMOCRATICAMENTE
-###### Cuiabá, 30/09/2018.
+###### Cuiabá, 30/09/2018
 ### Objetivo:
  #### Utilizar os dados da API do TSE para realizar pesquisa e consulta detalhada dos candidados em 2018, sendo eles:
     1-Presidente da República
