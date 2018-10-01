@@ -1,77 +1,30 @@
-# Processo Seletivo Frontend Junior da Sigma/TJMT
-Bem-vindo ao processo seletivo para desenvolvedor Frontend Junior do TJMT/Sigma!
-
-## O Desafio - Projeto Democraticamente
-
-Crie uma aplicação Web utilizando a API do TSE (Tribunal Superior Eleitoral) como fonte de dados.
-
-## Endpoints:
-#### [Presidente](http://divulgacandcontas.tse.jus.br/divulga/rest/v1/candidatura/listar/2018/BR/2022802018/1/candidatos)
-#### [Governador](http://divulgacandcontas.tse.jus.br/divulga/rest/v1/candidatura/listar/2018/MT/2022802018/3/candidatos)
-#### [Senador](http://divulgacandcontas.tse.jus.br/divulga/rest/v1/candidatura/listar/2018/MT/2022802018/5/candidatos)
-#### [Deputado Federal](http://divulgacandcontas.tse.jus.br/divulga/rest/v1/candidatura/listar/2018/MT/2022802018/6/candidatos)
-#### [Deputado Estadual](http://divulgacandcontas.tse.jus.br/divulga/rest/v1/candidatura/listar/2018/MT/2022802018/7/candidatos)
-http://divulgacandcontas.tse.jus.br/divulga/rest/v1/candidatura/buscar/2018/BR/2022802018/candidato/${id_candidato} // URL de detalhes dos candidatos a presidência.
-
-http://divulgacandcontas.tse.jus.br/divulga/rest/v1/candidatura/buscar/2018/MT/2022802018/candidato/${id_candidato} // URL de detalhes das outras classes de candidatos
-
-### Para visualizar o resultado das API's, vocês poder usar:
-##### [JSON Formatter](https://jsonformatter.curiousconcept.com/)
-##### [JSON Formatter-Chrome extension](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=pt-BR)
-##### [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/?hl=pt-br)
-##### [Postman | API Development Environment](https://www.getpostman.com/)
-
-
-## Requisitos
-Deverá atender os requisitos abaixo para todas categorias de candidatos: Presidente/Governador/Senador/Deputado Federal/Deputado Estadual
-### Obrigatório
-* Página para Listagem dos candidatos
-* Página para visualização dos detalhes do candidato
-    * Foto
-    * Nome
-    * Cargo
-    * Candidatura (Deferida/Indeferida)
-    * Partido
-    * Número do Candidato
-    * Vices Candidatos
-
-### Observações/Dicas
-
-* Não limite-se às funcionalidades acima. Qualquer outra feature extra (e não obrigatória) é bem-vinda. Por exemplo:
-    * Campo de pesquisa por nome na páginas de listagem
-    * Campo de pesquisa por estado do candidato
-    * Criar uma lista para salvar seus candidatos (Pode ser memória ou cache), se persistir é melhor ainda
+###### Nome do projeto: Projeto DEMOCRATICAMENTE
+###### Cuiabá, 30/09/2018.
+### Objetivo:
+ #### Utilizar os dados da API do TSE para realizar pesquisa e consulta detalhada dos candidados em 2018, sendo eles:
+    1-Presidente da República
+    2-Governador
+    3-Senador
+    4-Deputado Federal
+    5-Deputado Estadual
+### Funcionalidades:
+ #### O projeto inicia na página index.php com um select dinâmico simples, onde é usado para definir a categoria dos candidatos para listar(presidente, governador e etc).
+   ##### Ao selecionar a categoria(tipo) do candidato, será exibido uma lista de acordo, onde o usuário poderá clicar no campo "Nome na urna" para ir a página de detalhes do candidato.
+     Na página de detalhes.php fornecerá as seguintes informações:
+        1-Foto(OBS)
+        2-Nome
+        3-Cargo
+        4-Candidatura
+        5-Partido
+        6-Número do candidato
+        7-Vices do candidato(OBS)
+        
+        !OBS(possivelmente o link para a API onde tinha na url o "id_candidato" não pode ser acessada devido a uma restrição, assim
+        não consegui saber se estaria a foto e o nome dos vices de cada candidato (presidente,governador) pois os campos de vices e
+        fotoUrl nos JSON de cada candidato estão nulos.
+### Tecnologias utilizadas no desenvolvimento do projeto:
+    - Foi utilizado JavaScript, JQuery e AJAX para captar as informações vindas da API em JSON.
+    - Para estilização do projeto, foi utilizado CSS3 com Bootstrap.
+    - Foi utilizado a linguagem PHP para captar com mais facilidade as informações transmitidas via GET na página de detalhes.php.
     
-* O layout é por sua conta.
-* A arquitetura é por sua conta.
-* Qualquer framework SPA (Vue.js, React ou Angular) é permitido
-* Usar javascript puro é permitido
-* Usar CSS puro é permitido
-* Usar qualquer pré-processador (LESS ou SASS) é permitido
-* Não se esqueça da otimização da velocidade da aplicação e da experiência do usuário.
-
-## Critérios de avaliação
-
-* Usabilidade
-* Criatividade
-* Código limpo e organizado
-* Documentação do projeto (readme)
-
-
-## Procedimento
-
-* Faça um fork do projeto 
-* Ao finalizar a sua aplicação, crie um pull request no projeto de origem.
-
-## Prazo
-*  O prazo para criar pull requests é até o dia 01/10/2018, às 12h.
-
-[Duvidas com Git e GitHub](https://tableless.com.br/tudo-que-voce-queria-saber-sobre-git-e-github-mas-tinha-vergonha-de-perguntar/)
-
-[Duvidas em como fazer um Fork](https://github.com/UNIVALI-LITE/Portugol-Studio/wiki/Fazendo-um-Fork-do-reposit%C3%B3rio)
   
-[Duvidas em como fazer um Pull Request](https://blog.da2k.com.br/2015/02/04/git-e-github-do-clone-ao-pull-request/)  
-
-### Dê o seu melhor!
-### Boa prova! 
-### Qualquer dúvida não hesite em perguntar.
